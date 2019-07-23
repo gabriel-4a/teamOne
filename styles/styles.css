@@ -1,3 +1,29 @@
-h1 {
-  color: blue;
+body{
+  background-color: #000000;
+  font-family: 'Darker Grotesque', sans-serif;
+  color: white;
+}
+h1{
+  color:#fffff8;
+  text-align: center;
+}
+#a{
+  font-size: 60px;
+
+}
+#b{
+  background-color: #dbc5b6;
+  margin:0px;
+  border: 0px;
+  padding:0px;
+  text-align: center;
+  font-family: 'Darker Grotesque', sans-serif;
+}
+nav{
+  opacity: 0.5;
+  background-color: #000000;
+}
+#c{
+  width:30%;
+  text-align: center;
 }

@@ -23,7 +23,6 @@ class AboutHandler(webapp2.RequestHandler):
 class PetsHandler(webapp2.RequestHandler):
     def get(self):
         # below are the form results from the form on home.html
-        
         pets_template = the_jinja_env.get_template('templates/pets.html')
         self.response.write(pets_template.render()) #passes in results_Dict that will fill the placeholders on results.html
 
@@ -32,7 +31,7 @@ class PetsHandler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
   ('/', HomeHandler),
   ('/about', AboutHandler),
-  ('/pets', PetsHandler),
+  ('/pets', PetsHandler)
   ], debug=True)
 
 

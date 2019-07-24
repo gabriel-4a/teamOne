@@ -1,11 +1,50 @@
+
 body{
   background-color: #000000;
   font-family: 'Source Code Pro', monospace;
   color: white;
+  margin: 2em;
 }
 h1{
-  color:#fffff8;
+  font: "Lucida Console";
+  font-style: italic;
+  color: #ffffff;
   text-align: center;
+  text-shadow: 2px 2px 5px grey;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+/* CSS files add styling rules to your content */
+
+
+
+h3 {
+  text-align: center;
+  text-shadow: 2px 2px 5px grey;
+  color: #ffffff;
+}
+h5 {
+    color: #ffffff;
+   text-align: center;
+}
+div2 {
+  box-shadow: 5px 5px 16px grey;
+}
+div3 {
+  text-align: center;
+
+}
+p {
+    color: #ffffff;
+  text-align: center;
+    margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 150px;
+  margin-left: 80px;
+
 }
 #a{
   font-size: 60px;

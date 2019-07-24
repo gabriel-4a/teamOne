@@ -18,24 +18,49 @@ class HomeHandler(webapp2.RequestHandler): #homepage "/"
 class AboutHandler(webapp2.RequestHandler):
     def get(self):
         about_template = the_jinja_env.get_template('templates/about.html')
-        self.response.write(about_template.render())  
+        self.response.write(about_template.render())
 
-class ResultsHandler(webapp2.RequestHandler):
+class PetsHandler(webapp2.RequestHandler):
     def get(self):
         # below are the form results from the form on home.html
-        results_Dict = {
-          'name': self.request.get('user-first-name'), #stores form input named 'user-first-name' under key 'name' which is the same name as the placeholder on 'results.html'
-          'feeling': self.request.get('user-feeling') #stores form input under 'user-feeling' under key 'feeling' which is the same name as the placeholder on 'results.html'
-        }
-        results_template = the_jinja_env.get_template('templates/results.html')
-        self.response.write(results_template.render(results_Dict)) #passes in results_Dict that will fill the placeholders on results.html
+        pets_template = the_jinja_env.get_template('templates/pets.html')
+        self.response.write(pets_template.render()) #passes in results_Dict that will fill the placeholders on results.html
 
+class DogHandler(webapp2.RequestHandler):
+    def get(self):
+        dogs_template = the_jinja_env.get_template('templates/pets.html')
+        self.response.write(dogs_template.render())
+
+class CatHandler(webapp2.RequestHandler):
+    def get(self):
+        cats_template = the_jinja_env.get_template('templates/pets.html')
+        self.response.write(cats_template.render())
+
+class GoldfishHandler(webapp2.RequestHandler):
+    def get(self):
+        goldfish_template = the_jinja_env.get_template('templates/pets.html')
+        self.response.write(goldfish_template.render())
+
+class SnakeHandler(webapp2.RequestHandler):
+    def get(self):
+        snake_template = the_jinja_env.get_template('templates/pets.html')
+        self.response.write(snake_template.render())
+
+class MouseHandler(webapp2.RequestHandler):
+    def get(self):
+        snake_template = the_jinja_env.get_template('templates/pets.html')
+        self.response.write(mouse_template.render())
 
 # the routes / app configuration section
 app = webapp2.WSGIApplication([
   ('/', HomeHandler),
   ('/about', AboutHandler),
-  ('/results', ResultsHandler),
+  ('/dogs', PetsHandler),
+  ('/dogs', DogHandler),
+  ('/cats', CatHandler),
+  ('/goldfish', GoldfishHandler),
+  ('/snake', SnakeHandler),
+  ('/mouse', MouseHandler)
   ], debug=True)
 
 

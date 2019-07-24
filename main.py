@@ -55,7 +55,7 @@ class MouseHandler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
   ('/', HomeHandler),
   ('/about', AboutHandler),
-  ('/pets', PetsHandler),
+  ('/dogs', PetsHandler),
   ('/dogs', DogHandler),
   ('/cats', CatHandler),
   ('/goldfish', GoldfishHandler),

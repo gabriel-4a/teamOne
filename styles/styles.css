@@ -1,6 +1,6 @@
 body{
   background-color: #000000;
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   color: white;
 }
 h1{
@@ -23,10 +23,13 @@ nav{
   opacity: 0.5;
   background-color: #000000;
 }
-#c{
-  width:30%;
-  text-align: center;
+.c{
+   margin-left: 12%;
+   margin-right: 12%;
+  text-align:center;
 }
+
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;

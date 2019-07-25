@@ -89,3 +89,6 @@ p {
   color: white;
   transform: rotateY(180deg);
 }
+.card-deck{
+  display:inline-grid;
+}

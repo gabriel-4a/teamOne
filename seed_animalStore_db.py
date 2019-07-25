@@ -8,6 +8,7 @@ def seed_data():
     cS= Pet(name="Corn Snakes",difficulty="medium",food="frozen thawed mice",need1="needs a heat lamp")
     gF = Pet(name="Goldfish",difficulty="easy",food="commercial goldfish flakes",need1="need a water filter and change water constantly")
 
+
     sD.put()
     lD.put()
     cat.put()

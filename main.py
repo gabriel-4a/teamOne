@@ -15,9 +15,9 @@ class HomeHandler(webapp2.RequestHandler): #homepage "/"
         home_template = the_jinja_env.get_template('templates/home.html') #pulls in "home.html" template
         self.response.write(home_template.render()) #serves home.html template back to front-end
 
-class AboutHandler(webapp2.RequestHandler):
+class LoginHandler(webapp2.RequestHandler):
     def get(self):
-        about_template = the_jinja_env.get_template('templates/about.html')
+        about_template = the_jinja_env.get_template('templates/login.html')
         self.response.write(about_template.render())
 
 class PetsHandler(webapp2.RequestHandler):
@@ -52,16 +52,20 @@ class MouseHandler(webapp2.RequestHandler):
 	        mouse_template = the_jinja_env.get_template('templates/pets.html')
 	        self.response.write(mouse_template.render())
 
+
+
 # the routes / app configuration section
 app = webapp2.WSGIApplication([
   ('/', HomeHandler),
-  ('/about', AboutHandler),
-  ('/dogs', PetsHandler),
+  ('/login', LoginHandler),
   ('/dogs', DogHandler),
   ('/cats', CatHandler),
   ('/snakes', SnakeHandler),
-  ('/mice', MouseHandler)
+  ('/mice', MouseHandler),
+  ('/goldfish', GoldfishHandler)
   ], debug=True)
+
+
 
 
 

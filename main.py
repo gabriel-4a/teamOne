@@ -28,6 +28,7 @@ class PetsHandler(webapp2.RequestHandler):
 
 class DogHandler(webapp2.RequestHandler):
 	def get(self):
+
 	        dogs_template = the_jinja_env.get_template('templates/pets.html')
 	        self.response.write(dogs_template.render())
 

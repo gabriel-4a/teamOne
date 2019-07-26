@@ -132,7 +132,7 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
 /* Add a hover effect for buttons */
@@ -299,6 +299,6 @@ hr{
 .card-deck{
   display:inline-grid;
 }
-a {
-  text-align: center;
+#store-map{
+  margin: 5%;
 }

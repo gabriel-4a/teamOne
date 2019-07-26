@@ -159,3 +159,6 @@ hr{
 .card-deck{
   display:inline-grid;
 }
+#store-map{
+  margin: 5%;
+}

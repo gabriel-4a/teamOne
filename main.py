@@ -48,7 +48,7 @@ class SnakeHandler(webapp2.RequestHandler):
 
 class MouseHandler(webapp2.RequestHandler):
     def get(self):
-       mouse_template = the_jinja_env.get_template('templates/mice.html')
+       mouse_template = the_jinja_env.get_template('templates/mouse.html')
        self.response.write(mouse_template.render())
 
 class PetstoreHandler(webapp2.RequestHandler):

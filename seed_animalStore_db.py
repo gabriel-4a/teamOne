@@ -1,4 +1,5 @@
 from models import Pet
+
 def seed_data():
 
     sD = Pet(name="Small Dogs",difficulty="hard",food="dry or wet commercial dog food",need1="often need to be walked", need2="need to be spayed or nutered")

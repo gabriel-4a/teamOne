@@ -23,13 +23,13 @@ class LoginHandler(webapp2.RequestHandler):
 class PetsHandler(webapp2.RequestHandler):
     def get(self):
         # below are the form results from the form on home.html
-        pets_template = the_jinja_env.get_template('templates/pets.html')
+        pets_template = the_jinja_env.get_template('templates/dogs.html')
         self.response.write(pets_template.render()) #passes in results_Dict that will fill the placeholders on results.html
 
 class DogHandler(webapp2.RequestHandler):
 	def get(self):
 
-	        dogs_template = the_jinja_env.get_template('templates/pets.html')
+	        dogs_template = the_jinja_env.get_template('templates/dogs.html')
 	        self.response.write(dogs_template.render())
 
 class CatHandler(webapp2.RequestHandler):
@@ -49,7 +49,7 @@ class SnakeHandler(webapp2.RequestHandler):
 
 class MouseHandler(webapp2.RequestHandler):
     def get(self):
-	        mouse_template = the_jinja_env.get_template('templates/mouse.html')
+	        mouse_template = the_jinja_env.get_template('templates/mice.html')
 	        self.response.write(mouse_template.render())
 
 

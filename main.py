@@ -48,10 +48,18 @@ class SnakeHandler(webapp2.RequestHandler):
 
 class MouseHandler(webapp2.RequestHandler):
     def get(self):
-       mouse_template = the_jinja_env.get_template('templates/mouse.html')
+       mouse_template = the_jinja_env.get_template('templates/mice.html')
        self.response.write(mouse_template.render())
 
+class PetstoreHandler(webapp2.RequestHandler):
+    def get(self):
+        petStores_template = the_jinja_env.get_template('templates/petStores.html')
+        self.response.write(petStores_template.render())
 
+class VetsHandler(webapp2.RequestHandler):
+    def get(self):
+        vets_template = the_jinja_env.get_template('templates/vets.html')
+        self.response.write(vets_template.render())
 
 # the routes / app configuration section
 app = webapp2.WSGIApplication([
@@ -61,7 +69,9 @@ app = webapp2.WSGIApplication([
   ('/cats', CatHandler),
   ('/snakes', SnakeHandler),
   ('/mice', MouseHandler),
-  ('/goldfish', GoldfishHandler)
+  ('/goldfish', GoldfishHandler),
+  ('/petstores', PetstoreHandler),
+  ('/vets', VetsHandler)
   ], debug=True)
 
 
